@@ -8,7 +8,7 @@ $(document).ready(function () {
     $("#rng").text(rng);
 
 
-    var images = ["assets/images/41sLTbXkXZL._SL500_AC_SS350_.jpg", "assets/images/round-realistic_9cfcdd2c-1403-4b2b-9b9a-ad5fc3f96367_270x.png", "assets/images/red-ruby-stone-500x500.jpg", "assets/images/Melee_Sapphire_Blue_A_72ca4a79-7a1f-4676-a39b-05f60d004d93_1024x1024.png"]
+    var images = ["assets/images/round.png", "assets/images/round-realistic_9cfcdd2c-1403-4b2b-9b9a-ad5fc3f96367_270x.png", "assets/images/sapphire-gem-stone-11530924456nlz7w6muzp.png", "assets/images/Melee_Sapphire_Blue_A_72ca4a79-7a1f-4676-a39b-05f60d004d93_1024x1024.png"]
 
     function crystalgame() {
         $("#crystalcreator").empty();

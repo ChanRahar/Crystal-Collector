@@ -7,40 +7,47 @@
     <title>unit-4-game</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="assets/css/reset.css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" media="screen" href="assets/css/style.css" />
 
 </head>
 
 <body>
+    <nav class="navbar navbar-light bg-light">
+        <span class="navbar-brand mb-0 h1">CrystalCollector!</span>
+    </nav>
 
-    <h1>CrystalCollector!</h1>
+    <div class="container">
+        <p>You will be given a random number at the start of the game.</p>
+        <p> There are four crystals below. By clicking on a crystal, you will add a specifi amount of points to your total
+            score.</p>
+        <p>You win the game by matching your total score to random number. You lose if your total score goes above the random
+            number.
+        </p>
+        <p>The value of each crystal in hidden from you until you click on it.</p>
+        <p>Each time when the game starts, the game will change the values of each crystal</p>
 
-    <p>You will be given a random number at the start of the game.</p>
-    <p> There are four crystals below. By clicking on a crystal, you will add a specifi amount of points to your total score.</p>
-    <p>You win the game by matching your total score to random number. You lose if your total score goes above the random number.
-    </p>
-    <p>The value of each crystal in hidden from you until you click on it.</p>
-    <p>Each time when the game starts, the game will change the values of each crystal</p>
+        <div>Number to Get:
+            <span id="rng"></span>
+        </div>
 
-    <div>Number to Get:
-        <span id="rng"></span>
+        <div>Wins:
+            <span id="win"></span>
+        </div>
+        <div>Losses:
+            <span id="lose"></span>
+        </div>
+
+        <div id="crystalcreator"></div>
+        <div>Current Score:
+            <br>
+            <span id="score"></span>
+        </div>
+
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="assets/javascript/game.js"></script>
     </div>
-
-    <div>Wins:
-        <span id="win"></span>
-    </div>
-    <div>Losses:
-        <span id="lose"></span>
-    </div>
-
-    <div id="crystalcreator"></div>
-    <div>Current Score:
-        <span id="score"></span>
-    </div>
-
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="assets/javascript/game.js"></script>
-
 </body>
 
 </html>
